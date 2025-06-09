@@ -1,0 +1,36 @@
+# Unity 프로젝트를 위한 개행 문자 설정
+# 모든 텍스트 파일에 대해 Git이 자동으로 개행 문자를 감지하고,
+# 저장소에는 LF로 저장하며, 작업 공간에서는 시스템 기본 설정으로 변환
+* text=auto eol=lf
+
+# Unity 관련 파일들은 명시적으로 LF로 설정하여 일관성 유지
+*.meta text eol=lf
+*.unity text eol=lf
+*.asset text eol=lf
+*.controller text eol=lf
+*.anim text eol=lf
+*.mat text eol=lf
+*.prefab text eol=lf
+*.scene text eol=lf
+*.giparams text eol=lf
+*.lightmap text eol=lf
+*.lighting text eol=lf
+*.renderTexture text eol=lf
+*.overrideController text eol=lf
+*.physicMaterial2D text eol=lf
+*.physicMaterial text eol=lf
+*.mask text eol=lf
+*.fontsettings text eol=lf
+*.spriteatlas text eol=lf
+*.playable text eol=lf
+*.mixer text eol=lf
+*.preset text eol=lf
+*.guiskin text eol=lf
+*.flare text eol=lf
+*.rendertexture text eol=lf
+
+# Unity 라이브러리 및 패키지 캐시 파일은 바이너리로 취급하여 개행 문자 변환 방지
+# 이 폴더들은 Git이 추적하지 않도록 .gitignore에도 추가하는 것이 좋습니다.
+Library/PackageCache/ binary
+Library/ binary
+Temp/ binary
